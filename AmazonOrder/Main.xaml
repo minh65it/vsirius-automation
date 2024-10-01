@@ -1,0 +1,447 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1044,2741.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sma="clr-namespace:System.Management.Automation;assembly=System.Management.Automation" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>MongoDB.Bson</x:String>
+      <x:String>MongoDB.Bson.Serialization</x:String>
+      <x:String>MongoDB.Driver</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>MongoDB.Bson</AssemblyReference>
+      <AssemblyReference>MongoDB.Driver.Legacy</AssemblyReference>
+      <AssemblyReference>MongoDB.Driver</AssemblyReference>
+      <AssemblyReference>MongoDB.Driver.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="644.8,2676.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="LogPath" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ArrConfig">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">new Dictionary&lt;string, string&gt;()</CSharpValue>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="ui:Browser" Name="browser" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtOrder">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">new DataTable()</CSharpValue>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtFinalOrder">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">new DataTable()</CSharpValue>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="582.4,2564.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence DisplayName="Start Process" sap:VirtualizedContainerService.HintSize="545.6,2333.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modules\\ReadConfig.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="483.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Modules\\ReadConfig.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="ArrConfig">
+                <CSharpReference x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">ArrConfig</CSharpReference>
+              </InOutArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <Assign DisplayName="Assign Log Path" sap:VirtualizedContainerService.HintSize="483.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">LogPath</CSharpReference>
+              </OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">ArrConfig["LogPath"].ToString()</CSharpValue>
+              </InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:InvokePowerShell x:TypeArguments="sma:PSObject" CommandText="taskkill /F /IM msedge.exe" ContinueOnError="True" DisplayName="Close OLD Browser" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_1" IsScript="True">
+            <ui:InvokePowerShell.PowerShellVariables>
+              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+            </ui:InvokePowerShell.PowerShellVariables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokePowerShell>
+          <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Edge" DisplayName="Open Browser Order Amazon" sap:VirtualizedContainerService.HintSize="483.2,355.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://sellercentral.amazon.com/home">
+            <ui:OpenBrowser.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,229.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="SetFocus_2">
+                    <ui:SetFocus.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="126cbba2-d2be-4f69-aa77-8f49bdb1a64f">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SetFocus.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:SetFocus>
+                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
+                </Sequence>
+              </ActivityAction>
+            </ui:OpenBrowser.Body>
+            <ui:OpenBrowser.UiBrowser>
+              <OutArgument x:TypeArguments="ui:Browser">
+                <CSharpReference x:TypeArguments="ui:Browser" sap2010:WorkflowViewState.IdRef="CSharpReference`1_43">browser</CSharpReference>
+              </OutArgument>
+            </ui:OpenBrowser.UiBrowser>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:OpenBrowser>
+          <uix:NApplicationCard AttachMode="ByInstance" ContinueOnError="True" DisplayName="Use Browser Edge: Amazon Sign-In" sap:VirtualizedContainerService.HintSize="483.2,748" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="8bc6de01-e1b3-4052-9433-d1b2314f6d12" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,531.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" IsPassword="True" ScopeIdentifier="8bc6de01-e1b3-4052-9433-d1b2314f6d12" Text="2119110353@Vinh" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://sellercentral.amazon.com/ap/signin?clientContext=130-8451609-4007165&amp;openid.return_to=https%3A%2F%2Fsellercentral.amazon.com%2Fhome&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=sc_na_amazon_v2&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;mons_redirect=sign_in&amp;ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.Dlgfk6pRrfLKpnHib5w_0PDPtIQA6eem2ys1F3VT8-CoHGC23K3QPg.E98eGxmukVpi8NIb.k_ri7M4cXPeJOyyr0Hd8fcARijL9ubqDBrwdlqqM-uHEApfz1SBBOTjkrkKVhdUtpMJjONavoCKi62RIlQzW87Y3zOBEUX7mWbr3QMsLnjihYwLdHCqk8bdg2m7Wux8N-xAKs5Es6mClQdeUDQO4Kz6smFhvKjANwhF5aguKKrKZ5YeQeIXc0CkTsiQ-DgpraRpZsGqXx6rxlvo-OHfpRPcEnrsuN0Cvqb7dJGAQEdH7ZZZOuDgsScxVLnIpt4KTtxv2MHGskG6wBlE6YXVWoEoO_1PIKRIyBUv6s16YyrH_N6jPEegL7rukA6GsBFR1i0wZt0tIL2GjfpWYTU24fIFIPZm3h8RvfxboNReh_55I0e1xvoviA8RveHtHRuUOcvjsmIN5oo_paakt7IcCv6otzqcVNE_EBgGoA3P7s8wrQxMb7ePwiWXUBKq2fXf6WRtHYX-sAu60SIQ0h6u3gWHCopOjtw34hTBcWiFrQ-1uv2eU9HGi5e5irsHTwDNgj9ib_CpW0O3IpQlpSC3b84tA3vAvKVsouBJeo7AKMg0ajxbSqQ7IuvVRIQfmmSZJnz507lhoNvvQIx4GNQ78qZU8FD7oFn8.NObAVvlSwyWyBU4l5tXY5w" CvElementArea="757, 406, 374, 43" CvType="InputBox" DesignTimeRectangle="759, 408, 370, 39" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'2119110353@Vinh'" FullSelectorArgument="&lt;webctrl id='ap_password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ap_password' tag='INPUT' type='password' class='a-input-text a-span12 auth-required-field' aaname='                                 Password                                      ' /&gt;" Guid="00b6fc63-8f70-440a-8999-ce0eb500c035" InformativeScreenshot="71fb49a8b338e5f276f24f2ae7056e97.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CvTextArea="759, 383, 73, 16" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="759, 382, 150, 26" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='                                 Password                       *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                 Password                       *' tag='LABEL' type='' class='a-form-label' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAeCAYAAADU3gfZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASySURBVHhe7Zg9a+NYFIb3L/hXqHAfl4GBSRlXI0hhs8UapojZIpiBoGoRKRYzxaAYBpMiOEXAUwQPgxelCEmxAQUCHpbsaiAbp3BhNoWKFIIp3j33S5LtfBkbNXMeOBDdq3sl5z469+MnMEwOsGhMLrBoTC6waEwusGhMLrBoTC6waEwusGjPMfbhbtiwN1z4Y13GzM3Dol14KBQKM1GquOh9i/VNPwijHury99fRG+kyZm6eEa2EsvyaKV5ZqqzowL/T9/0IsGhL4RnRPAS6CBig/VqUFVD/nJlD4gjDqwDBuYgQw3tdniG+DR+vvx8ilHUBwludLb/HiKKIIps9nyqL6K8MSZ8DDO9mM3A80Y/qI/6uL4l4pN/3akx/s2jLYA7RxuhtKtGs1kCV9Buw5H3ZKKHRNyJSm63SVL0F71LXfm6gNFGn+77toiqvbXSu1b24amNNlqUDHp+5qt3rNn0GsgRBy555p9JWj97EYH5HDd1zWn+9UZnauxB1MQZ71Yn21kpJX7Noi/By0e5P4RbVP985jmTR+KSN5qGvs1UA/0NVtdvoYChuoH7kIK3T2u4yRHhJ9/W78G9FZQBP9leGezRAeDWgPnx0j0XLIbqVqWd9qqm+KdwzlY3CvTV5vfZRaRYdO+p5RRvu4SmCkw4aK6pNeS+U96Si6Vgp09KgjLYQ7auRuQxHtBe/aa8+IzgzPy9eo61qyQrrJN8D06MkmWa0oBdN3YZ2bNdKmJQATXkvidYfYrp2eGCrtu9FTxH8bfq7UpWZzvogykiYX0X7NbS/ihbmOhVPEJ84qp+ip7NeKlrtUH4OCYOWXoe+89P34alzKTwjWiboy6/t9BBOGBEh7DfR0DI23pmv32RCykw/68GjKFUcdM7TSWx4mJmmVqpw9gOMzVrpugNblMvsqKS0DwIlU6ZMCKSeRRlS92WyoMT0k4iSilY/yp5XZERNsh/Boi2FOdZo09B6plWW95XeuvBaHrzfp0UT0GbhpAt3c1VLZU2IEF2fortTTzKmtW2yyRCdDT3ANEWvibUdTW8q01HZmRJIZTfBQE/FU5uV7NpOFj8vmlmDSli0pbCAaCaD0KLaDMD01DnF+Kiu+k3kyDCebWvWYLVfxPrMxalYml2qdV95XUiu5FPo6ZXqrJ0g2YVGtGGRz6QNg8pTj4mWPq9Q0WtMAYu2FBYQLdTHHRbqe2Lh7KOzpTKcaTfuO6htN+HJDYMPT0+j5X0a8pEP562DZos2B2LR3dLT6HpHC0Ek2YhiU+8cY9qUmLKiiyBzehGThGVZV6JpnjLs+wZsmeXoHZMs97hoYppVu12TpZtwKmbXzKItwgKi0ZCduHogRdDgfvTgyGvVLjr3UNW7PhUW7N98JUxEGTEZRBXWG9o0TAxmenZnH5gck4qSzVyG8bE7+cziKur7g8x9T4hGiPYP/yYWbREeFm0eYnVgOnGOOoU6IKV4aLd6r+ue6mBuMge5mYPYlzN7iMssxuKiMcwLYNGYXGDRmFxg0ZhcYNGYXGDRmFxg0ZhcYNGYXJgQ7ebmBt3uJ+zu7sLzPA6OpUUi2mg0wpcvf+DPi7/w97//4Z+bOw6OJcUd/gdfr9Gc7ADJ1wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'INPUT signInSubmit'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8bc6de01-e1b3-4052-9433-d1b2314f6d12" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://sellercentral.amazon.com/ap/signin" CvElementArea="756, 499, 373, 42" CvTextArea="918, 511, 52, 18" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="760, 502, 369, 36" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'INPUT signInSubmit'" FullSelectorArgument="&lt;webctrl id='signInSubmit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='signInSubmit' tag='INPUT' type='submit' class='a-button-input' aaname='' /&gt;" Guid="a9732022-9277-4891-9e9d-35c757241b63" InformativeScreenshot="f8176bc763d8e4453ed56124581963b3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHqSURBVDhPhZJPiBJhGMbHGXNcZnP/WKtrHaxJ2go67KE0DGxpOwtiCVoY5UHCgywejSjwVuJB6FJB4MGT6MmTdFK8RMiiIHgOjyoiXnyaeXfGmWGEXvgx3/PM875838fHSIVNWCwWOBwOguO4jRkFsxmPx9FqtTCZTDCbzdDpdJBKpUw5BaORyWSg1mKxwGq1UhSQSCQMWQVN8DyP4XBI4WazCZfLBb/fj+l0Sl61WtU3qmiCZVmEQiHEYjF4PB7yBEHAYDCgAY1GY53VYTIQDAZRLpfR6/XoDtSq1+umrITRyOfzShxot9solUoYj8ek/zvA5/NhuVxSuFKprP1+v09erVZbezo0EQ6HKShXNpslTxRFzOdz8rrdLt2TvkdCE4FAgIJyyedPp9PUpK9oNKpvltGEzWajbepLPn+xWKT1aDTCvfvH+mYZ6ewHVrh3Lp6rjd+iV1coFJDL5eD1esmPRCIQb/lwfJ3B2TMHHt7ktQE3rlhRfLGH5CMBPGeYboCVePfkMr4nndJ3W/Uvfnp2OXxL7uP3eze+vtzH28fbOL1rx9M7drwKCPjyfA+/cgf4FN5B7IEA8arVOEDl5MiOn2+cOP94iL+frxF/Prjx47UTodt2Q1bBZBD8JQt2t1hCXm/KMAyDf142yeBuTUU+AAAAAElFTkSuQmCC" InformativeScreenshot="509b56ef0fd5c5e7f8efb80684478b93.jpg" Selector="&lt;html app='msedge.exe' title='Amazon Sign-In' /&gt;" Title="Amazon Sign-In" Url="https://sellercentral.amazon.com/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fsellercentral.amazon.com%2Fhome&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=sc_na_amazon_v2&amp;openid.mode=checkid_setup&amp;language=en_US&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=sc_na_amazon_v2&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;ssoResponse=eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0._uzyfwn3gIH65nP-CmIPAT9Nya6LMjAdMLKJWxUo9GJKYa1d8dtlvA.2Ir7TTvxZTaMke3O.0gLDEwm41e2dgwsAqOR17x16WX2r-HXqrQdZ44n5bCIuODfJI7EaHY8jeVkljJLBK4q5a3egT09cCTgB2hOn32sLOrYR7q48c0UpLYRB1exYlXPyX3emGCjMXiCLwDMxDaRrZ-YFentpd3SPG6kuglFF3k--Ts_tCjFXCWmsS1Td-LQwZ0S9L2h3W15AhmW9grIrjexq6b3tzy2b-6h4B79dEQN_bGkZf1mbn1i-cLArAcnqBuCf6DHbPTMCIWCW2jZWKb65dBiwvXwN_kriFWfN07RnwzZ8SXbN5ncYAhEcM0oz-UxCYXpSRiJbfTHjJQEQZQbJiRCB2J7ddJHM0ULCggHSk4WvQ_SvZnoYPDjx2EZOzw-MpYMnD981zyhVLQVpFRlD6F8v4dQWnd1YwILm1tjUd4D5uigjiZwwaRN5-x-VwiibkjRihrK2DFAdZ--cr2krYBJiBKi6V3LmLOdNhjNJmXEpkxzs99lXHqLAbXevSx8jdm8hRGl3dviAw7AeaYAJE6HwW3Vi30YtTFdq1Yq33RPsOm7W02FAYQ0bJqGvMPC4MF4l6lBk1LX8Xf2Bru5ukSf9jshsupJuS9KxaKyJDg.7NNJhofe3AyFNFVo51_Keg" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="dtOrder = new DataTable();&#xA;dtOrder.Columns.Add(&quot;OrderID&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;TrackingID&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;PurchaseDate&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;BuyerName&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;Address1&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;Address2&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;ShipTo&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;AddressType&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;Phone&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;OrderContent&quot;,typeof(DataTable));" DisplayName="Create Unshipped" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="InvokeCode_13" Language="CSharp">
+            <ui:InvokeCode.Arguments>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtOrder">
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_56">dtOrder</CSharpReference>
+              </InOutArgument>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtFinalOrder">
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_57">dtFinalOrder</CSharpReference>
+              </InOutArgument>
+            </ui:InvokeCode.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeCode>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Go to Unshipped" sap:VirtualizedContainerService.HintSize="483.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Modules\\GoToDetailData.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtOrder">
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_52">dtOrder</CSharpReference>
+              </InOutArgument>
+              <InOutArgument x:TypeArguments="ui:Browser" x:Key="browser">
+                <CSharpReference x:TypeArguments="ui:Browser" sap2010:WorkflowViewState.IdRef="CSharpReference`1_53">browser</CSharpReference>
+              </InOutArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="typeOrder">unshipped</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeWorkflowFile>
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="dtFinalOrder.Merge(dtOrder);&#xA;&#xA;dtOrder = new DataTable();&#xA;dtOrder.Columns.Add(&quot;OrderID&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;TrackingID&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;PurchaseDate&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;BuyerName&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;Address1&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;Address2&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;ShipTo&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;AddressType&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;Phone&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;OrderContent&quot;,typeof(DataTable));" DisplayName="Merge Unshipped 2" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="InvokeCode_14" Language="CSharp">
+            <ui:InvokeCode.Arguments>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtOrder">
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_58">dtOrder</CSharpReference>
+              </InOutArgument>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtFinalOrder">
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_59">dtFinalOrder</CSharpReference>
+              </InOutArgument>
+            </ui:InvokeCode.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeCode>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Go to Cancelled" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Modules\\GoToDetailData.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtOrder">
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_64">dtOrder</CSharpReference>
+              </InOutArgument>
+              <InOutArgument x:TypeArguments="ui:Browser" x:Key="browser">
+                <CSharpReference x:TypeArguments="ui:Browser" sap2010:WorkflowViewState.IdRef="CSharpReference`1_65">browser</CSharpReference>
+              </InOutArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="typeOrder">canceled</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeWorkflowFile>
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="dtFinalOrder.Merge(dtOrder);" DisplayName="Merge Cancelled" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="InvokeCode_17" Language="CSharp">
+            <ui:InvokeCode.Arguments>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtOrder">
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_66">dtOrder</CSharpReference>
+              </InOutArgument>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtFinalOrder">
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_67">dtFinalOrder</CSharpReference>
+              </InOutArgument>
+            </ui:InvokeCode.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeCode>
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,257.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Go to Shipped" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Modules\\GoToDetailData.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtOrder">
+                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_44">dtOrder</CSharpReference>
+                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="ui:Browser" x:Key="browser">
+                      <CSharpReference x:TypeArguments="ui:Browser" sap2010:WorkflowViewState.IdRef="CSharpReference`1_45">browser</CSharpReference>
+                    </InOutArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="typeOrder">shipped</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:InvokeWorkflowFile>
+                <ui:InvokeCode ContinueOnError="{x:Null}" Code="dtFinalOrder.Merge(dtOrder);&#xA;&#xA;dtOrder = new DataTable();&#xA;dtOrder.Columns.Add(&quot;OrderID&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;TrackingID&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;PurchaseDate&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;ShipTo&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;AddressType&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;Phone&quot;,typeof(string));&#xA;dtOrder.Columns.Add(&quot;OrderContent&quot;,typeof(DataTable));" DisplayName="Merge Shipped" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="InvokeCode_15" Language="CSharp">
+                  <ui:InvokeCode.Arguments>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtOrder">
+                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_60">dtOrder</CSharpReference>
+                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtFinalOrder">
+                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_61">dtFinalOrder</CSharpReference>
+                    </InOutArgument>
+                  </ui:InvokeCode.Arguments>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:InvokeCode>
+              </Sequence>
+            </ui:CommentOut.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:CommentOut>
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="var client = new MongoClient(ArrConfig[&quot;ConnectString&quot;].ToString());&#xA;var database = client.GetDatabase(&quot;Amazon&quot;);&#xA;&#xA;//tạo và lấy collection&#xA;string collectionName = &quot;Order2&quot;;&#xA;//var filter = new BsonDocument(&quot;name&quot;, collectionName);&#xA;//var options = new ListCollectionNamesOptions { Filter = filter };&#xA;if (!database.ListCollectionNames().Any())&#xA;{&#xA;&#x9;database.CreateCollection(collectionName);&#xA;}&#xA;&#xA;var collection = database.GetCollection&lt;BsonDocument&gt;(collectionName);&#xA;&#xA;//Convert Datable to Json Object để insert&#xA;JArray jsonArray = new JArray();&#xA;if(dtOrder != null &amp;&amp; dtOrder.Rows.Count &gt; 0)&#xA;{&#xA;&#x9;foreach (System.Data.DataRow row in dtOrder.Rows)&#xA;&#x9;{&#xA;&#x9;    JObject jsonObject = new JObject();&#xA;&#x9;    foreach (System.Data.DataColumn col in dtOrder.Columns)&#xA;&#x9;    {&#xA;&#x9;        jsonObject[col.ColumnName] = JToken.FromObject(row[col]);&#xA;&#x9;    }&#xA;&#x9;    jsonArray.Add(jsonObject);&#xA;&#x9;}&#xA;&#xA;&#x9;var OrderIDList = collection.Distinct&lt;string&gt;(&quot;OrderID&quot;, new BsonDocument()).ToList();&#xA;&#x9;// Chuyển đổi JArray thành đối tượng BsonDocument&#xA;&#x9;var documents = new List&lt;BsonDocument&gt;();&#xA;&#x9;var curDate = DateTime.Now;&#xA;&#x9;foreach (JObject jsonObject in jsonArray)&#xA;&#x9;{&#xA;&#x9;    jsonObject[&quot;UpdatedDate&quot;] = curDate;&#xA;&#x9;    BsonDocument bsonDocument = BsonDocument.Parse(jsonObject.ToString());&#xA;&#x9;&#x9;documents.Add(bsonDocument);&#xA;&#x9;    if (OrderIDList.Contains(jsonObject[&quot;OrderID&quot;].ToString()))&#xA;&#x9;    {&#xA;&#x9;        //update&#xA;&#x9;        var filter1 = Builders&lt;BsonDocument&gt;.Filter.Eq(&quot;OrderID&quot;, jsonObject[&quot;OrderID&quot;].ToString());&#xA;&#x9;        collection.ReplaceOne(filter1, bsonDocument);&#xA;&#x9;    }&#xA;&#x9;    else&#xA;&#x9;    {&#xA;&#x9;        //insert&#xA;&#x9;        collection.InsertOne(bsonDocument);&#xA;&#x9;    }&#xA;&#x9;}&#xA;}" DisplayName="Insert To Mongo" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="InvokeCode_11" Language="CSharp">
+            <ui:InvokeCode.Arguments>
+              <InArgument x:TypeArguments="sd:DataTable" x:Key="dtOrder">
+                <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">dtFinalOrder</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="ArrConfig">
+                <CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">ArrConfig</CSharpValue>
+              </InArgument>
+            </ui:InvokeCode.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeCode>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="548.8,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modules\\WriteLog.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Modules\\WriteLog.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="Message">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">exception.Message</CSharpValue>
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="LogPath">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">LogPath</CSharpValue>
+                  </InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <Throw sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Throw_1">
+                <InArgument x:TypeArguments="s:Exception">
+                  <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">exception</CSharpValue>
+                </InArgument>
+              </Throw>
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>
